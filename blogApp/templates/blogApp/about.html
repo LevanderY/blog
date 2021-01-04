@@ -1,0 +1,77 @@
+{% extends 'blogApp/layout/index.html' %}
+
+{% block content %}
+    
+    <section>
+        <div class="about">
+            <div class="about_inner">
+                <div class="text-center">
+                {% load static %}
+                    <img src="{% static 'img\about\avatar.png' %}" class="avatar_img">
+                </div>
+
+                <h1 class="text-center mt-2 title">Hello, I'm <span style="color: #8550b1;">Yuriy</span> Leshchishin</h1>
+                <div class="container">
+                    <h2 class="subtitle mt-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Accusantium perferendis id sint earum voluptas rem expedita, 
+                        reprehenderit eveniet at repellat! Hic voluptatum necessitatibus 
+                    </h2>
+
+                    <div class="text-center pt-3">
+                        <button type="button" class="btn btn-warning btn-lg">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="skills">
+            <h2 class="text-center mt-2 title" style="color: #8550b1;">My skills:</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-4 d-flex justify-content-center">
+                        <div class="skills_item">
+                            <p class="skill_text">Html</p>
+                            <p class="skill_text">Css</p>
+                            <p class="skill_text">Js</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 d-flex justify-content-center">
+                        <div class="skills_item">
+                            <p class="skill_text">Python</p>
+                            <p class="skill_text">Django</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 d-flex justify-content-center">
+                        <div class="skills_item">
+                            <p class="skill_text">Bootstrap</p>
+                            <p class="skill_text">jQuery</p>
+                            <p class="skill_text">Less</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 d-flex justify-content-center">
+                        <div class="skills_item">
+                            <p class="skill_text">React</p>
+                            <p class="skill_text">Redux</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 d-flex justify-content-center">
+                        <div class="skills_item">
+                            <p class="skill_text">Git</p>
+                            <p class="skill_text">GitHub</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 d-flex justify-content-center">
+                        <div class="skills_item">
+                            <p class="skill_text">Soft Skills :)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% include 'blogApp/includes/footer.html' %}
+{% endblock %}

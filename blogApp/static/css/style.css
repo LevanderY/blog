@@ -1,0 +1,166 @@
+/****** header ******/
+header {
+    padding: 5px 0;
+    border-top: 4px solid #4d0c81;
+    background-color: rgba(0, 0, 0, 0.918);
+}
+
+header .navbar-brand {
+    font-size: 22px;
+}
+
+header .nav-link {
+    font-size: 20px;
+    color: #fff !important;
+}
+
+/* emphasize */
+header .nav-link {
+    position: relative;
+	cursor: pointer;
+	line-height: 1;
+}
+
+header .nav-link::after {
+    margin-top: 5px;
+    display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 4px;
+	background-color: #4d0c81; 
+	content: "";
+	transition: width 0.4s ease-out; 
+}
+
+header .nav-link:hover:after,
+header .nav-link:focus:after {
+	width: 100%;
+}
+
+/* FOTOER */
+.footer {
+    padding: 20px 0;
+    background-color: #1b1b1b;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER */
+
+/* *** About page starts *** */
+.about {
+    color: #fff;
+    height: 100vh;
+    background-color: #1b1b1b;
+}
+
+.about_inner {
+    padding-top: 30px;
+}
+
+.avatar_img {
+    border: 5px solid #4d0c81;
+    border-radius: 50%;
+    width: 320px;
+    height: 320px;
+}
+
+.about .title,
+.skills .title {
+    font-size: 35px;
+}
+
+.about .subtitle {
+    font-size: 20px;
+    text-align: center;
+}
+
+.about .btn {
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.about .btn:hover {
+    border-color: #fff !important;
+    color: #fff;
+    background-color: #4d0c81 !important;
+}
+
+.skills {
+    color: #fff;
+    padding: 30px 0;
+    background-color: #141414;
+}
+
+.skills .skills_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #ffc107;
+    transition: 0.5s;
+}
+
+.skills .skill_text {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.skills .skills_item:hover {
+    background: #1b1b1b;
+    border: 5px solid #4d0c81;
+}
+
+/* *** About page ends *** */
+
+
+/* *** Main page starts ***  */
+
+.posts {
+    padding: 10px 0;
+    background-color: #1b1b1b;
+}
+
+.post_inner {
+    width: 100%;
+    max-width: 981px;
+    margin: 0 auto;
+}
+
+.post_box {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post_img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+.post_title,
+.post_text {
+    color: #fff;
+}
+
+.post_text {
+    font-weight: normal;
+    font-size: 19px;
+}
+
+.img_post:hover {
+    border: 3px solid #4d0c81;
+}
+
+/* *** Main page ends ***  */
