@@ -1,7 +1,15 @@
 {% extends 'blogApp/layout/index.html' %}
 
 {% block content %}
+
+    {% if user.is_authenticated %}
     <div class="container">
+        <p> You are logged in like: <strong>{{ user.username }}</p></strong>
         <a href="{% url 'account_email' %}">Change E-mail</a>
+        <br>
+        <a href="{% url 'account_change_password' %}">Change Password</a>
     </div>
+    {% endif %}
+
 {% endblock %}
+

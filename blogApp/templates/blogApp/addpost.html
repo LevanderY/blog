@@ -1,0 +1,19 @@
+{% extends 'blogApp/layout/index.html' %}
+
+
+{% block content %}
+    {% if user.is_staff %}
+    <div class="container pt-3">
+    {% comment %} enctype="multipart/form-data" забирає помилку {% endcomment %}
+    {% comment %}
+        Включення властивості enctype для форми забезпечує правильне прикріплення завантаженого файлу до запиту. 
+    {% endcomment %}
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Add">
+        </form>    
+    </div>
+    {% endif %} 
+    
+{% endblock %}

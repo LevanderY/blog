@@ -117,7 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
 LANGUAGE_CODE = 'uk'
-
+# en
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
@@ -128,6 +128,7 @@ USE_TZ = True
 
 # Redirect login/logout allauth
 LOGIN_REDIRECT_URL = '/about/'
+ACCOUNT_LOGOUT_REDIRECT_URL = '/accounts/login/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
@@ -142,3 +143,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 SITE_ID = 1
+
+#Від помилки з реєстаріцію 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

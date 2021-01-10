@@ -8,16 +8,18 @@
                 {% load static %}
                 {% for i in bbs %}
                 <div class="post_box">
-
                     <h3 class="post_title text-center">{{ i.title }}</h3>
                     <div class="pt-4 text-nceter">
-                        <img src="{{ i.img.url }}" class="post_img">
+                        <p><img src="{{ i.img.url }}" class="post_img"></p>
                     </div>
                     <h5 class="mt-5 post_text text-center">{{ i.content }}</h5>
                     <hr style="background-color: #fff; width: 100%;">
                 </div>
                 {% endfor %} 
                 <!--  -->
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-secondary" id="loadMore">Load More</a>
             </div>
         </div>
     </div>
